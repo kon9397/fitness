@@ -608,7 +608,70 @@ p {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 1120px) {
+  .navigation {
+    display: block;
+    text-align: center;
+    padding-bottom: 20px; 
+  }
+
+  .navigation .navbar {
+    width: 100%;
+  }
+
+  .about-cards .card {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .about .about-cards {
+    display: block;
+  }
+
+  .about-cards .card .card-body {
+    margin: 0;
+    text-align: center;
+  }
+
+  .workout-program .tab-btns .tab-btn {
+    font-size: 25px;
+  }
+
+  .rules-block .rule {
+    display: block;
+    padding: 90px 0;
+  }
+
+  .rules-block .rule .rule-container {
+    width: 100%;
+  }
+
+  .products {
+    padding: 80px 0;
+  }
+
+  .step-block .step-block-cards .card .card-img {
+    min-width: 150px;
+    min-height: 150px;
+  }
+
+  .step-block .step-block-cards .card .card-title {
+    font-size: 25px;
+  }
+
+  .footer .site-map {
+    width: 100%;
+    display: block;
+  }
+
+  .footer .site-map .site-map-item {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 630px) {
   h2, h3, h4 {
     font-size: 50px;
   }
@@ -623,6 +686,11 @@ p {
 
   .jumbotron {
     padding: 140px;
+  }
+
+  .navigation {
+    display: flex;
+    
   }
 
   .navigation .navbar {
@@ -721,6 +789,10 @@ p {
     padding: 80px 0;
   }
 
+  .thesis .thesis-squares .square {
+    padding:40px 0;
+  }
+
   .thesis .thesis-content {
     padding: 60px 0;
   }
@@ -728,7 +800,12 @@ p {
   .step-block {
     padding: 60px 0;
   }
-
+  
+  .step-block .step-block-cards .card .card-img {
+    min-width: 250px;
+    min-height: 250px;
+  }
+  
   .step-block .step-block-title {
     font-size: 40px;
   }
@@ -749,65 +826,6 @@ p {
 
   .subscribe .subscribe-title {
     font-size: 40px;
-  }
-
-  .footer .site-map {
-    width: 100%;
-    display: block;
-  }
-
-  .footer .site-map .site-map-item {
-    width: 100%;
-    text-align: center;
-  }
-}
-
-@media (max-width: 900px) {
-  .navigation {
-    display: block;
-    text-align: center;
-    padding-bottom: 20px; 
-  }
-
-  .navigation .navbar {
-    width: 100%;
-  }
-
-  .about-cards .card {
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
-
-  .about .about-cards {
-    display: block;
-  }
-
-  .about-cards .card .card-body {
-    margin: 0;
-    text-align: center;
-  }
-
-  .workout-program .tab-btns .tab-btn {
-    font-size: 25px;
-  }
-
-  .rules-block .rule {
-    display: block;
-    padding: 90px 0;
-  }
-
-  .rules-block .rule .rule-container {
-    width: 100%;
-  }
-
-  .products {
-    padding: 80px 0;
-  }
-
-  .step-block .step-block-cards .card .card-img {
-    min-width: 150px;
-    min-height: 150px;
   }
 
   .footer .site-map {
