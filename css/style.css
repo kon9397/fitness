@@ -1,0 +1,822 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a, p, h1, h2, h3, h4, h5, h6, ul, li {
+  list-style: none;
+  font-weight: normal;
+  font-size: 14px;
+  text-decoration: none;
+  color: #000000;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+h2, h3, h4 {
+  font-size: 106px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 24px;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Dosis', sans-serif;
+}
+
+.navigation .brand {
+  padding-top:10px;
+}
+
+.navigation .navbar {
+  display:flex;
+  justify-content: space-between;
+  width: 70%;
+  flex-wrap: wrap;
+}
+
+.navbar-link > a {
+  font-weight: bold;
+  font-size: 15px;
+  padding: 16px 15px;
+  text-transform: uppercase;
+}
+
+.navbar-link > a:hover {
+  border-bottom: 2px solid #e74c3c; 
+}
+
+.mobile {
+  display: none;
+}
+
+/* DROPDOWN */
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown a {
+  vertical-align: middle;
+}
+
+.dropdown img {
+  max-width: 16px;
+  vertical-align: middle;
+  transform: rotate(180deg);
+  transition: all 0.3s ease;
+}
+
+.dropdown img.active {
+  transform: rotate(0);
+}
+
+.dropdown-menu {
+  min-width: 100%;
+  position: absolute;
+  left: 0;
+  top: 150%;
+  transform: translateY(-10%);
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(170, 170, 170, 0.253);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.dropdown-menu.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-menu ul li {
+  padding: 10px 0 0;
+}
+
+.dropdown-menu ul li a {
+  font-size: 16px;
+}
+
+.dropdown-menu ul li a:hover {
+  color: #e74c3c;
+}
+
+
+/* DROPDOWN END */
+
+.jumbotron {
+  background-color: #000000;
+  background-image: url('../img/jumbotron.png');
+  background-size: contain;
+  padding: 300px 0;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about {
+  padding-bottom: 100px;
+}
+
+.about .about-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: -125px;
+}
+
+.about-cards .card {
+  padding: 70px 30px;
+  width:32%;
+  display: flex;
+  align-items:center;
+  background-color: #ffffff;
+}
+
+.card.black, .card.black .card-title{
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.about-cards .card .card-image img {
+  width: 100%;
+  max-width: 77px;
+}
+
+.about-cards .card .card-body {
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.card-body .card-title {
+  font-size: 18px;
+}
+
+.card-link {
+  display: inline-block;
+  margin-top: 20px;
+  text-transform: uppercase;
+  color: #e74c3c;
+  cursor: pointer;
+}
+
+.about-program {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 90px;
+  flex-wrap: wrap;
+}
+
+.about-program-left {
+  width: 27%;
+  font-size: 34px;
+  color: #e74c3c;
+}
+
+.about-program-border {
+  width: 2%;
+}
+
+.about-program-border img{
+  width: 100%;
+}
+
+.about-program-right {
+  width: 65%;
+}
+
+.about-video {
+  margin-top: 70px;
+  position: relative;
+}
+
+.about-video .square {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  padding: 15% 0;
+  background-color: #e74c3c;
+}
+
+.about-video .videowrapper {
+  position: relative;
+  top: 30px;
+  left: 30px;
+  width: 90%;
+  padding-bottom: 40.25%;
+  padding-top: 25px;
+}
+
+.videowrapper iframe {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.start-block {
+  padding: 161px 0 128px 0; 
+  background-color: #e74c3c;
+}
+
+.start-block .container {
+  text-align: center;
+}
+
+.start-block-text, .start-block .btn {
+  text-transform: uppercase;
+  font-size: 46px;
+  font-weight: bold;
+}
+
+.start-block .start-block-text {
+  color: #ffffff;
+}
+
+.start-block .btn {
+  display: inline-block;
+  margin-top: 79px;
+  padding: 39px 106px;
+  background-color: #ffffff;
+  color: #e74c3c;
+}
+
+.brand-block {
+  padding-top: 110px;
+}
+
+.brand-block .brand-block-text {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.brand-block .brand-block-text p{
+  width: 44%;
+}
+
+.brand-block-forma {
+  text-align: center;
+  margin: 100px 0 50px;
+}
+
+.brand-block-forma img {
+  width: 50%;
+}
+
+.brand-block-title {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom:22px;
+}
+
+.brands .brands-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.brands-questions {
+  padding: 55px 0 177px;
+  
+}
+
+.brands-questions .brands-questions-item  {
+  padding: 45px 0;
+  border-bottom: 1px solid #e7e7e7;
+  display:flex;
+  justify-content: space-between;
+  
+}
+
+.brands-questions .brands-questions-item .icon {
+  width: 5%;
+}
+
+.brands-questions .brands-questions-item .icon img{
+  width: 100%;
+  max-width: 40px;
+}
+
+.brands-questions .brands-questions-item .item-text {
+  font-size: 24px;
+  font-weight: bold;
+  width: 94%;
+}
+
+.workout-program {
+  padding: 75px 0 ;
+  background-color: #e74c3c;
+  text-align: center;
+}
+
+.workout-program .workout-program-text {
+  font-size: 46px;
+  width:86%;
+  color: #ffffff;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+.workout-program .workout-program-title {
+  padding: 75px;
+  font-size: 106px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.workout-program .tab-btns {
+  display: flex;
+}
+
+.workout-program .tab-btns .tab-btn {
+  padding: 25px 35px;
+  width: 33%;
+  font-size: 46px;
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #e74c3c;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 1.2s ease;
+}
+
+.workout-program .tab-btns .tab-btn:hover, .workout-program .tab-btns .tab-btn.active {
+  color: #000000;
+}
+
+.workout-program .tab-content {
+  text-align: left;
+  position: relative;
+}
+
+.workout-program .tab-content .tab-text {
+  color: #ffffff;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1.2s ease;
+}
+
+.workout-program .tab-content .tab-text.active {
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+}
+
+.rules-block .rule {
+  display: flex;
+  justify-content: flex-end;
+  padding: 90px;
+}
+
+.rules-block .rule.rule-black {
+  justify-content: flex-start;
+  background-color: #000000;
+}
+
+.rules-block .rule .rule-container {
+  width: 63%;
+}
+
+.rules-block .rule .rule-title {
+  padding: 20px 0;
+  font-size: 46px;
+  text-transform: uppercase;
+}
+
+.rules-block .rule .rule-text {
+  font-size: 24px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.rules-block .rule .red-highlight {
+  color: #e74c3c;
+}
+
+.rules-block .rule.rule-black .rule-title {
+  color: #ffffff;
+}
+
+.rules-block .rule.rule-black .rule-text {
+  color: #ffffff;
+}
+
+.products {
+  padding: 200px;
+  background-color: #f5f5f5;
+}
+
+.products .products-title {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.products .products-text {
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 24px;
+  margin-top: 75px;
+}
+
+.thesis {
+  background-color: #e74c3c;
+}
+
+.thesis .thesis-squares {
+  display:flex;
+}
+
+.thesis .thesis-squares .square {
+  background-color: white;
+  padding: 120px 0;
+  width: 20%;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.thesis .thesis-squares .square.red {
+  background-color: #e74c3c;
+}
+
+.thesis .thesis-content {
+  padding: 120px 0; 
+}
+
+.thesis .thesis-content::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.thesis .thesis-content .left-thesis {
+  float: left;
+  width: 45%;
+  text-align: right;
+}
+
+.thesis .thesis-content .right-thesis {
+  float: right;
+  width: 45%;
+}
+
+.thesis .thesis-content .thesis-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 60px 0;
+
+}
+
+.thesis .thesis-content img {
+  width: 10%;
+}
+
+.thesis .thesis-content .thesis-text {
+  color: #ffffff;
+  width: 85%;
+}
+
+.step-block {
+  padding: 160px 0;
+  text-align: center;
+}
+
+.step-block .step-block-title {
+  font-size: 106px;
+  font-weight: bold;
+  width: 76%;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+.step-block .red {
+  color: #e74c3c;
+}
+
+.step-block .step-block-text {
+  padding: 20px 0;
+  width: 60%;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+.step-block .step-block-cards {
+  margin-top: 65px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.step-block .step-block-cards .card {
+  width: 30%;
+  text-align: center;
+}
+
+.step-block .step-block-cards .card .card-img {
+  width:70%;
+  min-width: 250px;
+  min-height:250px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: url('../img/card.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+.step-block .step-block-cards .card .card-title {
+  font-size: 46px;
+  text-transform: uppercase;
+  padding: 40px 0;
+}
+
+.subscribe {
+  background-color: #e74c3c;
+  padding: 150px;
+  text-align: center;
+}
+
+.subscribe .subscribe-title {
+  font-size: 106px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.subscribe .subscribe-text {
+  color: #ffffff;
+  margin-bottom: 120px;
+}
+
+.subscribe .subscribe-btn {
+  font-family: 'Roboto Condensed', sans-serif;
+  display: inline-block;
+  font-size: 46px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.footer {
+  padding: 50px;
+  text-align: center;
+}
+
+.footer .site-map {
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .site-map .site-map-item {
+  width:30%;
+  padding-bottom: 15px;
+}
+
+.footer .site-map .site-map-item:hover {
+  border-bottom: 1px solid #e74c3c;
+}
+
+.footer .site-map .site-map-item a {
+  font-size: 18px;
+}
+
+.footer .copyright {
+  font-size: 12px;
+  margin-top: 35px;
+}
+
+
+@media (max-width: 600px) {
+  h2, h3, h4 {
+    font-size: 50px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+  
+  .container {
+    width: 90%;
+  }
+
+  .jumbotron {
+    padding: 140px;
+  }
+
+  .navigation .navbar {
+    justify-content: flex-end;
+  }
+
+  .navbar-link {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .about .about-cards {
+    margin-top: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .about-cards .card {
+    width: 100%;
+  }
+
+  .about-program {
+    flex-direction: column;
+  }
+
+  .about-program-left {
+    width: 100%;
+  } 
+
+  .about-program-right {
+    width: 100%;
+  }
+
+  .about-program-border {
+    width: 5%;
+  }
+
+  .about-program-border img {
+    transform: rotate(90deg);
+  }
+
+  .start-block-text {
+    font-size: 26px;
+  }
+
+  .start-block .btn {
+    padding: 19px 50px;
+  }
+
+  .brand-block .brand-block-text p {
+    width: 100%;
+  }
+
+  .brands-questions .brands-questions-item {
+    flex-direction: column;
+  }  
+
+  .brands-questions .brands-questions-item .icon {
+    width: 100%;
+    text-align: center;
+  }
+
+  .workout-program .workout-program-text {
+    font-size: 24px;
+    width: 100%;
+  }
+
+  .workout-program .workout-program-title {
+    font-size: 50px;
+    padding: 30px 0;
+  }
+
+  .workout-program .tab-btns {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .workout-program .tab-btns .tab-btn {
+    width: 100%;
+    font-size: 28px;
+  }
+
+  .rules-block .rule {
+    display: block;
+    padding: 90px 0;
+  }
+
+  .rules-block .rule .rule-container {
+    width: 100%;
+  }
+
+  .products {
+    padding: 80px 0;
+  }
+
+  .thesis .thesis-content {
+    padding: 60px 0;
+  }
+
+  .step-block {
+    padding: 60px 0;
+  }
+
+  .step-block .step-block-title {
+    font-size: 40px;
+  }
+
+  .step-block .step-block-cards {
+    margin-top: 30px;
+    display: block;
+  }
+  
+  .step-block .step-block-cards .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .subscribe {
+    padding: 50px 0;
+  }
+
+  .subscribe .subscribe-title {
+    font-size: 40px;
+  }
+
+  .footer .site-map {
+    width: 100%;
+    display: block;
+  }
+
+  .footer .site-map .site-map-item {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .navigation {
+    display: block;
+    text-align: center;
+    padding-bottom: 20px; 
+  }
+
+  .navigation .navbar {
+    width: 100%;
+  }
+
+  .about-cards .card {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .about .about-cards {
+    display: block;
+  }
+
+  .about-cards .card .card-body {
+    margin: 0;
+    text-align: center;
+  }
+
+  .workout-program .tab-btns .tab-btn {
+    font-size: 25px;
+  }
+
+  .rules-block .rule {
+    display: block;
+    padding: 90px 0;
+  }
+
+  .rules-block .rule .rule-container {
+    width: 100%;
+  }
+
+  .products {
+    padding: 80px 0;
+  }
+
+  .step-block .step-block-cards .card .card-img {
+    min-width: 150px;
+    min-height: 150px;
+  }
+
+  .footer .site-map {
+    width: 100%;
+    display: block;
+  }
+
+  .footer .site-map .site-map-item {
+    width: 100%;
+    text-align: center;
+  }
+}
