@@ -11,6 +11,40 @@
 </head>
 <body>
 
+  <div class="hamburger-menu">
+    <div class="overlay" data-modal="close"></div>
+    <div class="hamburger-wrapper">  
+      <div class="brand">
+        <img src="img/logo.png" alt="logo" class="logo">
+      </div>
+      <ul class="navbar">
+        <li class="navbar-mob"><a href="#">Home</a></li>
+          <li class="navbar-mob"><a href="#">Club-life</a></li>
+          <li class="navbar-mob dropdown">
+            <a data-drop="#drop1" href="#" class="droplink">Training <img src="img/chevron.svg"></a>
+            <div id="drop1" class="dropdown-menu">
+                <ul>
+                  <li><a href="#">Lose Fat</a></li>
+                  <li><a href="#">Mister Olimpia</a></li>
+                  <li><a href="#">Feel the Power</a></li>
+                </ul>
+              </div>
+          </li>
+          <li class="navbar-mob dropdown">
+            <a data-drop="#drop2" href="#" class="droplink">Instructors <img src="img/chevron.svg"></a>
+            <div id="drop2" class="dropdown-menu">
+              <ul>
+                <li><a href="#">John Doe</a></li>
+                <li><a href="#">Anna Doe</a></li>
+                <li><a href="#">James Doe</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="navbar-mob"><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
   <header class="main-header">
     <div class="container">
       <div class="navigation">
@@ -41,7 +75,7 @@
             </div>
           </li>
           <li class="navbar-link"><a href="#">Contact</a></li>
-          <li class="navbar-link mobile"><a href="#">Menu</a></li>
+          <li class="navbar-link mobile" data-modal="hamburger"><a href="#">Menu</a></li>
         </ul>
     </div>
   </header>
@@ -389,6 +423,7 @@
   </footer>
 
   
+  <script src="js/mobile.js"></script>
   <script src="js/dropdown.js"></script>
   <script src="js/tabs.js"></script>
   <script src="js/main.js"></script>
